@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
 using Newtonsoft.Json.Linq;
 
 namespace Schummato.Utilities
 {
-	public static class JObjectExtensions
+	internal static class JObjectExtensions
 	{
         /// <summary>
         /// Tries the get the value of the property specified. Returns the default value of T if it can't retrieve the value.
@@ -14,6 +15,9 @@ namespace Schummato.Utilities
         /// <returns></returns>
 		public static T TryGetProperty<T>(this JToken jObject, string propertyName)
 		{
+            if (jObject as JObject == null)
+                throw new ArgumentException("jObject parameter was not an object that inherits from type JObject.");
+
 			JToken value;
 
         	var returnValue = default(T);
@@ -26,7 +30,7 @@ namespace Schummato.Utilities
 				}
 				catch (Exception)
 				{
-					// nom nom. delicious exception
+                    Debug.Write("Exception thrown trying to get value from JObject");
 				}
 			}
 
