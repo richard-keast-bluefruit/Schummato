@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Entities\Clip.cs" />
     <Compile Include="Entities\Review.cs" />
+    <Compile Include="IRottenTomatoesAPI.cs" />
     <Compile Include="Responses\CastResponse.cs" />
     <Compile Include="Responses\ClipsResponse.cs" />
     <Compile Include="Responses\MovieResponse.cs" />
