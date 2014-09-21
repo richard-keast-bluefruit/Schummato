@@ -54,7 +54,6 @@
     <Compile Include="BugCorrectionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ApiTests.cs" />
-    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
