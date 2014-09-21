@@ -1,6 +1,6 @@
 ﻿namespace Schummato.Utilities
 {
-	public static class EndpointConstants
+	internal static class EndpointConstants
 	{
 		// Search
 		public const string MoviesSearchEndpoint = "http://api.rottentomatoes.com/api/public/v1.0/movies.json";

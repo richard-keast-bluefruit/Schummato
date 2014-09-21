@@ -54,6 +54,7 @@
     <Compile Include="Responses\ClipsResponse.cs" />
     <Compile Include="Responses\MovieResponse.cs" />
     <Compile Include="Responses\ReviewsResponse.cs" />
+    <Compile Include="Utilities\DataRetriever.cs" />
     <Compile Include="Utilities\EndpointBuilders\ClipsEndpointBuilder.cs" />
     <Compile Include="Utilities\EndpointBuilders\CurrentReleaseDVDEndpointBuilder.cs" />
     <Compile Include="Utilities\EndpointBuilders\DVDListsEndpointBuilder.cs" />
